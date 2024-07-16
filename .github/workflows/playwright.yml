@@ -23,7 +23,7 @@ jobs:
       - name: Ensure reports directory exists
         run: mkdir -p reports
       - name: Run your tests
-        run: pytest -s -v
+        run: pytest -s -v 
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
